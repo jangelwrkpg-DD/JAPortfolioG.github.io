@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Ángel Perez García | Digital & Graphic Designer</title>
+    <!-- SEO and Meta Tags -->
+    <meta name="description"
+        content="Portfolio of José Ángel Perez García, specializing in Digital Content, Multimedia, Branding, and Graphic Design.">
+    <!-- Google Fonts: Inconsolata (for a slightly technical/classic feel) and Outfit (for modern clean headers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for standard icons and suits if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Subtle Background Texture -->
+    <div class="bg-texture"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <!-- Logo dinámico -->
+            <a href="#home"><img src="Mi logo v3.png" id="main-logo" alt="José Ángel Logo - Home" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home <span class="suit">&spades;</span></a></li>
+                <li><a href="#work">Work <span class="suit">&hearts;</span></a></li>
+                <li><a href="#about">About <span class="suit">&clubs;</span></a></li>
+                <li><a href="#contact">Contact <span class="suit">&diams;</span></a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="subtitle">Dealing the best in</p>
+                <h1 class="glitch-effect" data-text="Digital & Graphic Design">Digital &<br>Graphic Design</h1>
+                <p class="description">
+                    I'm José Ángel Perez García. I craft visual narratives that captivate, convert, and engage.
+                    From branding to multimedia, every project is a winning hand.
+                </p>
+                <div class="cta-group">
+                    <a href="#work" class="btn btn-primary">See My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card-stack" id="theme-card">
+                    <div class="card-3d-inner">
+                        <!-- Lado 1: As de Corazón (Rojo) -->
+                        <div class="card-3d-front">
+                            <span class="corner-val top">A&hearts;</span>
+                            <div class="center-suit">&hearts;</div>
+                            <span class="corner-val bottom">A&hearts;</span>
+                        </div>
+                        <!-- Lado 2: As de Picas (Azul) -->
+                        <div class="card-3d-back">
+                            <span class="corner-val top">A&spades;</span>
+                            <div class="center-suit">&spades;</div>
+                            <span class="corner-val bottom">A&spades;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work / Portfolio Section -->
+        <section id="work" class="work-section">
+            <div class="section-header">
+                <h2>The Hand I Play</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="featured">Featured</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="photography">Photography</button>
+                    <button class="filter-btn" data-filter="covers">Covers</button>
+                    <button class="filter-btn" data-filter="bumpers">Bumpers</button>
+                    <button class="filter-btn" data-filter="advertising">Advertising</button>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Gallery dynamically injected via js/gallery.js -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="Profile Photo.png" alt="José Ángel Perez García" />
+                    <div class="decorative-border"></div>
+                </div>
+                <div class="about-text">
+                    <h2>The Player Behind the Cards</h2>
+                    <p>
+                        Digital and multimedia content designer with experience in audiovisual production, institutional
+                        branding, and storytelling for social media.
+                        Specialized in video edition, motion graphics, and visual communication for educational and
+                        corporate environments.
+                    </p>
+                    <div class="skills">
+                        <div class="skill-tag">UI/UX Design</div>
+                        <div class="skill-tag">Branding & Identity</div>
+                        <div class="skill-tag">Multimedia Production</div>
+                        <div class="skill-tag">Photography</div>
+                        <div class="skill-tag">Advertising Layouts</div>
+                        <div class="skill-tag">Marketing Designer</div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#"
+                            onclick="alert('Currículum no disponible en este momento. Por favor contáctame mediante el formulario.'); return false;"
+                            class="btn btn-outline">Download Resume <i class="fas fa-arrow-down"></i></a>
+                        <a href="assets/CV_Jose_Angel_Perez_Garcia.pdf" download="CV_Jose_Angel_Perez_Garcia.pdf"
+                            class="btn btn-outline">Descargar CV <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2>Call the Bluff or Make a Deal?</h2>
+                <p>Ready to collaborate on your next big project? Let's connect and create something impactful.</p>
+                <div class="contact-info" style="margin-top: 3rem;">
+                    <button class="btn btn-primary"
+                        onclick="navigator.clipboard.writeText('jangel.wrk.pg@gmail.com').then(() => { const orig = this.innerHTML; this.innerHTML = '<i class=\'fas fa-check\'></i> Contacto copiado correctamente'; setTimeout(() => this.innerHTML = orig, 2000); })"
+                        style="font-size: 1.2rem; text-transform: lowercase; margin-bottom: 2rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; letter-spacing: 0; border: none; cursor: pointer;">
+                        <i class="fas fa-envelope"></i> jangel.wrk.pg@gmail.com
+                    </button>
+
+                    <div class="social-links-large"
+                        style="display: flex; gap: 2rem; justify-content: center; font-size: 2.5rem; margin-top: 2rem;">
+                        <a href="https://www.linkedin.com/in/jose-angel-perez-garcia-113222310" target="_blank"
+                            rel="noopener noreferrer" style="color: var(--clr-text-muted); transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--clr-primary)'"
+                            onmouseout="this.style.color='var(--clr-text-muted)'"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.behance.net/joseanperezg2708" target="_blank" rel="noopener noreferrer"
+                            style="color: var(--clr-text-muted); transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--clr-primary)'"
+                            onmouseout="this.style.color='var(--clr-text-muted)'"><i
+                                class="fab fa-behance-square"></i></a>
+                        <a href="https://www.instagram.com/jose_aperezg/" target="_blank" rel="noopener noreferrer"
+                            style="color: var(--clr-text-muted); transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--clr-primary)'"
+                            onmouseout="this.style.color='var(--clr-text-muted)'"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.behance.net/joseanperezg2708" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-behance"></i></a>
+                <a href="https://www.instagram.com/jose_aperezg/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jose-angel-perez-garcia-113222310" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2026 José Ángel Perez García. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Case Studies (Single Page Architecture) -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-dynamic-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>
